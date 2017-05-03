@@ -1,10 +1,8 @@
-<?php 
-	$nota1 = $_POST['nota1'];
-	$nota2 = $_POST['nota2'];
-	$nota3 = $_POST['nota3'];
-	$nota4 = $_POST['nota4'];
-	$cont = $nota1 + $nota2 + $nota3;
-	$media = $cont / 2;
+<?php
+	$quantidade = $_POST['quantidade'];
+	$count = $_POST['nota1'] + $_POST['nota2'] + $_POST['nota3'] + $_POST['nota4'];
+	$media = $count / $quantidade;
+	
 	session_start();
 
 	if (!isset($_SESSION['Alunos'])) {

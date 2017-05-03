@@ -10,19 +10,21 @@
 	<h3>Ola Professora!!</h3>
 	<p>Aqui você vai tirar as Medias do seu Aluno, espero está facilitando seu trabalho.O sisteminha faz com que você não precise forçar a mente.</p>
 	</div>
+	<p>Escolha Quantidade de Nota (min = 0 // max = 4)</p>
+	
+	<hr>
 	<form action="media.php" method="POST">
+		<input type="number" id="number" min="0" max="4" name="quantidade"><button id="click">Quantas Notas</button>
+		<br>
 		<label>Nome do Aluno :</label>
 		<input type="text" id="nome" name="aluno" placeholder="Digite o nome do Aluno" required>
 		<br>
 		<label>Coloque as Notas :</label>
-		<input type="number" id="number"><button id="click">Proximo</button>
-		<div id="notas">
-			
-		</div>
+		<div id="notas"></div>
 		<br>
 		<input type="submit" name="enviar" value="Media">
-
 	</form>
+
 <table>
 <tr>
 	<th>Codigo</th>
@@ -49,7 +51,7 @@
 		$(".remove").remove();
 		var number = $("#number").val();
 		for(var i = 0; i < number; i++){
-			$("#notas").append("<input class='remove' type='number' min='0' max='10' name='nota" +(i + 1)+"'>");
+			$("#notas").append("<input class='remove' type='number'  name='nota" +(i + 1)+"'>");
 		}
 	});
 </script>

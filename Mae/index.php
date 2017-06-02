@@ -8,10 +8,10 @@
 <body>
 	<div class="titulo">
 	<h3>Ola Professora!!</h3>
-	<p>Aqui você vai tirar as Medias do seu Aluno, espero está facilitando seu trabalho.O sisteminha faz com que você não precise forçar a mente.</p>
+	<p>Sistema mata burro.</p>
 	</div>
 	<p>Escolha Quantidade de Nota (min = 0 // max = 4)</p>
-	
+
 	<hr>
 	<form action="media.php" method="POST">
 		<input type="number" id="number" min="0" max="4" name="quantidade"><button id="click">Quantas Notas</button>
@@ -32,7 +32,7 @@
 	<th>Media do Aluno</th>
 </tr>
 <tr>
-	<?php 
+	<?php
 	session_start();
 	// var_dump($_SESSION);
 	 for ($i=0; $i < count($_SESSION['Alunos']) ; $i++){

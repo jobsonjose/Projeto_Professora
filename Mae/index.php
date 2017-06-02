@@ -51,7 +51,7 @@
 		$(".remove").remove();
 		var number = $("#number").val();
 		for(var i = 0; i < number; i++){
-			$("#notas").append("<input class='remove' type='number'  name='nota" +(i + 1)+"'>");
+			$("#notas").append("<input class='remove' type='number' step='0.1'  name='nota" +(i + 1)+"'>");
 		}
 	});
 </script>

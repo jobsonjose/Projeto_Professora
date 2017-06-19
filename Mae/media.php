@@ -2,7 +2,7 @@
 	$quantidade = $_POST['quantidade'];
 	$count = $_POST['nota1'] + $_POST['nota2'] + $_POST['nota3'] + $_POST['nota4'];
 	$media = $count / $quantidade;
-	
+
 	session_start();
 
 	if (!isset($_SESSION['Alunos'])) {

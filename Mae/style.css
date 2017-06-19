@@ -20,19 +20,35 @@ label{
 	height: 15%;
 	border-radius: 5px;
 	margin-left: 2%;
+	margin-bottom: 2%;
+	margin-top: 2%;
 
 }
-[type=number]{
+[type=email]{
+	width: 95%;
+	height: 15%;
+	border-radius: 5px;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+
+
+}
+ [type=number]{
 	width: 50%;
 	height: 10%;
 	border-radius: 5px;
 	margin:auto;
 }
-[type=text]:hover{
+ [type=text]:hover{
 	background:#ddffcc;
 	border: 2px solid black;
 }
-[type=submit]{
+[type=email]:hover{
+	background:#ddffcc;
+	border: 2px solid black;
+}
+ [type=submit]{
 	width: 70%;
 	height: 10%;
 	background: #39e600;
@@ -40,7 +56,7 @@ label{
 	margin-left: 15%;
 	margin-top: 4%;
 }
-[type=submit]:hover{
+ [type=submit]:hover{
 	background: #9fff80;
 	font-family: italic;
 	border: 2px solid black;
